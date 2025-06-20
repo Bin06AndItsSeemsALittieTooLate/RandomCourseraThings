@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>The Homepage</title>
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
 </head>
-
 <body>
-  <header>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <nav>
-      <ul>
-        <li><a class="nav-active" href="index.html">Home</a></li>
-        <li><a href="customThumbnail.html">Custom Thumbnails</a></li>
-        <li><a href="bestPerformingVids.html">Best Performing Vids</a></li>
-      </ul>
-      <img src="images/avatar.webp" alt="Avatar">
-    </nav>
-    
-    <h1>The Homepage</h1>
-  </header>
-  <main>
-    <main id="main-content"></main>
-    <p>Welcome to the page for my <a href="https://www.youtube.com/@TheGuyBehindYou94">YT channel</a>. </p>
-
-    <p>You can give me a sub, or see <a href="customThumbnail.html">custom thumbnails</a> and the <a href="bestPerformingVids.html">best performing vids</a>.</p>
-
-  </main>
-  <footer>
-    <p>I will make the thumbnail go to the vids once I know how to do JavaScript.</p>
-  </footer>
+	
+	<div id = "image"> Hover on any of the pictures below</div>
+	
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
 </body>
-
 </html>
