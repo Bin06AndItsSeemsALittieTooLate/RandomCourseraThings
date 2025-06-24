@@ -9,3 +9,11 @@ function unDo(){
     imageDiv.style.backgroundImage = "";
     imageDiv.textContent = "";
 }
+
+function tabAdder(){
+    var i = 0;
+    const testArr = document.getElementsByClassName("preview");
+    for (i = 0, i <= testArr.length, i++){
+        document.
+    }
+}
