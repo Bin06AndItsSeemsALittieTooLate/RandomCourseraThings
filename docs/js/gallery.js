@@ -12,8 +12,9 @@ function unDo(){
 
 function tabAdder(){
     var i = 0;
-    const testArr = document.getElementsByClassName("preview");
-    for (i = 0, i <= testArr.length, i++){
-        document.
+    var testArr = document.querySelectorAll(".preview");
+    for (i = 0; i < testArr.length; i++){
+        testArr[i].setAttribute("tabindex","0")
+        console.log("hi");
     }
 }
