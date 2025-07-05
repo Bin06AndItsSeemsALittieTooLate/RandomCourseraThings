@@ -46,7 +46,7 @@ div{
 @media screen and (min-width: 772px){
     div{
         transition: 200ms;
-        width: 45vh;
+        width: 45vw;
         max-height: 30vh;
     }
 }
@@ -54,7 +54,7 @@ div{
 @media screen and (min-width: 998px){
     div{
         transition: 200ms;
-        width: 30vh;
+        width: 30vw;
     }
 }
 
