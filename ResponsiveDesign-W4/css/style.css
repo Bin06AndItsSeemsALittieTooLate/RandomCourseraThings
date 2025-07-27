@@ -24,9 +24,8 @@ li{
 }
 
 img{
-    border: 5px solid blue;
-    border-radius: 35px;
-    width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
   }
 
 .label{
@@ -38,28 +37,50 @@ img{
 .grid {
     row-gap: 10px;
     column-gap: 10px;
+    display: grid;
+    text-align: center;
+}
+
+.grid figure{
+    border: 5px solid black;
+    border-radius: 10vw;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 772px){
     div{
-        transition: 200ms;
-        column-count: 2;
-        border-radius: 100em;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    div:nth-last-child
+    .grid figure{
+        border: 2px solid #333;
+        border-radius: 400em;
+        padding-bottom: 10vh;
+    }
+
+    .grid figure img{
+        display: block;
+        width: 100vw;
+        height: auto;
+        max-width: fit-content;
+    }
+
+    .grid figure:nth-last-child(1){
+        grid-column: span 2;
+    }
 }
 
 @media screen and (min-width: 992px){
-    div{
-        transition: 200ms;
-        border-radius: 0px;
+    .grid figure{
+        border-radius: 0%;
+        padding-bottom: 0px;
     }
-    
-    div:nth-child(3){
 
+    .grid figure:nth-child(3n){
+        grid-column: span 2;
     }
 }
+
 /* done */
 @media (prefers-reduced-motion: reduce) {
     html{
@@ -67,6 +88,14 @@ img{
     }
 }
 
+/* done */
 @media (prefers-color-scheme: dark){
+    html{
+        background-color: black;
+    }
 
+    .grid figure{
+        background-color: black;
+        color: white;
+    }
 }
