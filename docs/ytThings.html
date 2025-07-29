@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html class="h-100" lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
         document.documentElement.setAttribute('data-bs-theme', theme);
     </script>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <header>
     <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
@@ -36,55 +36,56 @@
         </div>
     </div>
     </nav>
-    <div class="container">     <!--Main container-->
-        <div>
-            <h1 class="text-center text-primary">YT Things</h1>
-            <p class="text-center">A showcase of my own videos.</p>
-        </div>
+    </header>
+    <main class="flex-grow-1">
+        <div class="container">     <!--Main container-->
+            <div>
+                <h1 class="text-center text-primary">YT Things</h1>
+                <p class="text-center">A showcase of my own videos.</p>
+            </div>
+        <div class="row">
         <div class="col-sm-6 col-lg-3">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+            <a href="../htmlBeginnings/index.html" target="_blank" class="text-decoration-none">
                 <figure class="figure">
-                    <img src="https://www.example.com/thumbnail.jpg" class="figure-img img-thumbnail" alt="Example Page Thumbnail">
-                    <figcaption class="figure-caption text-center">Example Page</figcaption>                    
+                    <img src="img/AprilFools2025.png" class="figure-img img-thumbnail" alt="The Very Beginning">
+                    <figcaption class="figure-caption text-center">Site 1</figcaption>
                 </figure>
             </a>
         </div>
         <div class="col-sm-6 col-lg-3">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+            <a href="https://example1.com" target="_blank" class="text-decoration-none">
                 <figure class="figure">
-                    <img src="https://www.example.com/thumbnail.jpg" class="figure-img img-thumbnail" alt="Example Page Thumbnail">
-                    <figcaption class="figure-caption text-center">Example Page</figcaption>                    
+                    <img src="img/BossRaces.png" class="figure-img img-thumbnail" alt="Site 1">
+                    <figcaption class="figure-caption text-center">Site 1</figcaption>
                 </figure>
             </a>
         </div>
         <div class="col-sm-6 col-lg-3">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+            <a href="https://example1.com" target="_blank" class="text-decoration-none">
                 <figure class="figure">
-                    <img src="https://www.example.com/thumbnail.jpg" class="figure-img img-thumbnail" alt="Example Page Thumbnail">
-                    <figcaption class="figure-caption text-center">Example Page</figcaption>                    
+                    <img src="img/CrashTarget.png" class="figure-img img-thumbnail" alt="Site 1">
+                    <figcaption class="figure-caption text-center">Site 1</figcaption>
                 </figure>
             </a>
         </div>
         <div class="col-sm-6 col-lg-3">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+            <a href="https://example1.com" target="_blank" class="text-decoration-none">
                 <figure class="figure">
-                    <img src="https://www.example.com/thumbnail.jpg" class="figure-img img-thumbnail" alt="Example Page Thumbnail">
-                    <figcaption class="figure-caption text-center">Example Page</figcaption>                    
+                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Site 1">
+                    <figcaption class="figure-caption text-center">Site 1</figcaption>
                 </figure>
             </a>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                <figure class="figure">
-                    <img src="https://www.example.com/thumbnail.jpg" class="figure-img img-thumbnail" alt="Example Page Thumbnail">
-                    <figcaption class="figure-caption text-center">Example Page</figcaption>                    
-                </figure>
-            </a>
         </div>
+
     </div>
-
-
+    </main>
     
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">More things to add later.</span>
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

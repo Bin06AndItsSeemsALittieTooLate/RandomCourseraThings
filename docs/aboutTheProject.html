@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +11,33 @@
         document.documentElement.setAttribute('data-bs-theme', theme);
     </script>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <header>
-    <nav class="navbar navbar-expand-sm">
-    <div class="container-fluid">
-        <!-- Brand -->
-        <a class="navbar-brand" href="index.html">Main Page</a>
+        <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Main Page</a>
 
-        <!-- Toggle button for collapsed menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Toggle button for collapsed menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="ytThings.html">YT Things</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" id="active" href="aboutTheProject.html">About The Project</a>
-            </li>
-            </ul>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="ytThings.html">YT Things</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link active" id="active" href="aboutTheProject.html">About The Project</a>
+                </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    </nav>
-</header>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
     <div class="container">
         <h1 class="text-center text-primary">About The Project</h1>
             <p>So this project started out as a repo for me to learn about html, css and javascript</p>
@@ -72,8 +73,13 @@
             </div>
             
     </div>
+    </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <footer>When you click on the linked pages to view them, please continuously go back pages until you're back here. I will add back to here soon.</footer>
-
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">When you click on the linked pages to view them, please continuously go back pages until you're back here. I will add back to here soon.</span>
+        </div>
+    </footer>
 </body>
 </html>

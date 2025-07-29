@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html class="h-100" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
         document.documentElement.setAttribute('data-bs-theme', theme);
     </script>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <header>
     <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
@@ -36,10 +36,103 @@
         </div>
     </div>
     </nav>
-</header>
-    <div>
-        <p>Hello and welcome to the page</p>
-    </div>
+    </header>
+    <main class="flex-grow-1">
+        <div class="container">
+            <div>
+                <h1 class="text-center text-primary">Welcome</h1>
+                <p class="text-center">This is the webpage that I made for the Web Design for Everybody course on Coursera.</p>
+                <p class="text-center">Check out other parts of the page via the navigation bar above, or visit earlier iterations of this site below.</p>
+            </div>
+            <div>
+                <h2 class="text-center text-secondary">Earlier Versions</h2>
+                
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="../htmlBeginnings/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="The Very Beginning">
+                                    <figcaption class="figure-caption text-center">The Very Beginning</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../CSS-W1/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 1 of CSS">
+                                    <figcaption class="figure-caption text-center">Week 1 of CSS</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../CSS-W2/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 2 of CSS">
+                                    <figcaption class="figure-caption text-center">Week 2 of CSS</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../CSS-W4/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 4 of CSS">
+                                    <figcaption class="figure-caption text-center">Week 4 of CSS</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../JS-W2/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 2 of JavaScript">
+                                    <figcaption class="figure-caption text-center">Week 2 of JavaScript</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../JS-W4/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 4 of JavaScript">
+                                    <figcaption class="figure-caption text-center">Week 4 of JavaScript</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../ResponsiveDesign-W2/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 2 of Responsive Design">
+                                    <figcaption class="figure-caption text-center">Week 2 of Responsive Design</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="../ResponsiveDesign-W4/index.html" target="_blank" class="text-decoration-none">
+                                <figure class="figure">
+                                    <img src="img/MP-Update72.png" class="figure-img img-thumbnail" alt="Week 4 of Responsive Design">
+                                    <figcaption class="figure-caption text-center">Week 4 of Responsive Design</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">A very barren page this is. Also there's no back to here on the earlier pages.</span>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
