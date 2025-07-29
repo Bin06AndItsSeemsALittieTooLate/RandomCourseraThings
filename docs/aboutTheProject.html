@@ -82,13 +82,19 @@
         </div>
     </footer>
     <script>
-            if (location.hostname === "bin06anditsseemsalittietoolate.github.io") {
-            const links = document.querySelectorAll('a[href^="../"]');
-            links.forEach(link => {
-                const relPath = link.getAttribute('href').replace(/^..\//, '');
-                link.setAttribute('href', `/RandomCourseraThings/${relPath}`);
+        document.addEventListener('DOMContentLoaded', () => {
+            if (location.hostname.endsWith("github.io")) {
+                const repoPrefix = "/RandomCourseraThings/";
+                const elements = document.querySelectorAll('a[href^="../"], img[src^="../"], script[src^="../"], link[href^="../"]');
+            elements.forEach(el => {
+                const attr = el.tagName === 'IMG' || el.tagName === 'SCRIPT' ? 'src' : 'href';
+                const value = el.getAttribute(attr);
+            if (value && value.startsWith('../')) {
+                el[attr] = repoPrefix + value.replace(/^..\//, '');
+            }
             });
         }
+        });
     </script>
 </body>
 </html>
