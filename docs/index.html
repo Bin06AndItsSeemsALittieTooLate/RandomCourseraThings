@@ -134,14 +134,21 @@
         </div>
     </footer>
     <script>
-            if (location.hostname === "bin06anditsseemsalittietoolate.github.io") {
-            const links = document.querySelectorAll('a[href^="../"]');
-            links.forEach(link => {
-                const relPath = link.getAttribute('href').replace(/^..\//, '');
-                link.setAttribute('href', `/RandomCourseraThings/${relPath}`);
-            });
-        }
-    </script>
+  // Only run this on GitHub Pages
+  if (location.hostname === "bin06anditsseemsalittietoolate.github.io") {
+    const repoPrefix = "/RandomCourseraThings/";
+
+    // Fix all <a href="../...">
+    document.querySelectorAll('a[href^="../"]').forEach(link => {
+      link.href = repoPrefix + link.getAttribute('href').replace(/^..\//, '');
+    });
+
+    // Fix all <img src="../...">
+    document.querySelectorAll('img[src^="../"]').forEach(img => {
+      img.src = repoPrefix + img.getAttribute('src').replace(/^..\//, '');
+    });
+  }
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
