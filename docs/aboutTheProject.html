@@ -10,7 +10,22 @@
         const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.setAttribute('data-bs-theme', theme);
     </script>
-    <base href="https://bin06anditsseemsalittietoolate.github.io/RandomCourseraThings/">
+    <script>
+        if (window.location.hostname === "bin06anditsseemsalittietoolate.github.io") {
+        const base = document.createElement("base");
+        base.href = "/RandomCourseraThings/";
+        document.head.appendChild(base);
+    }
+    </script>
+    <script>
+        if (location.hostname === "bin06anditsseemsalittietoolate.github.io") {
+        const links = document.querySelectorAll('a[href^="../"]');
+        links.forEach(link => {
+            const relPath = link.getAttribute('href').replace(/^..\//, '');
+            link.setAttribute('href', `/RandomCourseraThings/${relPath}`);
+        });
+    }
+    </script>
 </head>
 <body class="d-flex flex-column h-100">
     <header>
