@@ -81,20 +81,5 @@
             <span class="text-muted">When you click on the linked pages to view them, please continuously go back pages until you're back here. I will add back to here soon.</span>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (location.hostname.endsWith("github.io")) {
-                const repoPrefix = "/RandomCourseraThings/";
-                const elements = document.querySelectorAll('a[href^="../"], img[src^="../"], script[src^="../"], link[href^="../"]');
-            elements.forEach(el => {
-                const attr = el.tagName === 'IMG' || el.tagName === 'SCRIPT' ? 'src' : 'href';
-                const value = el.getAttribute(attr);
-            if (value && value.startsWith('../')) {
-                el[attr] = repoPrefix + value.replace(/^..\//, '');
-            }
-            });
-        }
-        });
-    </script>
 </body>
 </html>
